@@ -1,0 +1,71 @@
+:root {
+  color-scheme: dark;
+  --ink: #f7f4ea;
+  --muted: #b7c6d1;
+  --navy: #091a2a;
+  --blue: #1f4c71;
+  --line: rgba(221, 235, 242, 0.2);
+  --gold: #e6bf68;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  min-width: 320px;
+  margin: 0;
+  color: var(--ink);
+  font-family: "Noto Sans KR", "Segoe UI", Arial, sans-serif;
+  background:
+    radial-gradient(circle at 88% 8%, rgba(69, 142, 165, 0.28), transparent 30rem),
+    linear-gradient(135deg, #102d45 0%, var(--navy) 54%, #06121d 100%);
+}
+
+main { width: min(1060px, calc(100% - 40px)); margin: 0 auto; }
+
+.hero { padding: 112px 0 88px; max-width: 780px; }
+.eyebrow { margin: 0 0 14px; color: var(--gold); font-size: 0.73rem; font-weight: 800; letter-spacing: 0.16em; }
+h1, h2, h3 { margin: 0; letter-spacing: -0.045em; }
+h1 { font-size: clamp(2.5rem, 6vw, 5rem); line-height: 1.08; }
+h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); }
+h3 { font-size: 1.65rem; }
+.lead { max-width: 650px; margin: 28px 0 18px; color: var(--muted); font-size: clamp(1rem, 2vw, 1.22rem); line-height: 1.8; word-break: keep-all; }
+.version { display: inline-block; padding: 8px 12px; border: 1px solid var(--line); border-radius: 99px; color: var(--muted); font-size: 0.9rem; }
+.version strong { color: var(--ink); }
+
+.downloads, .steps, .notice { padding: 58px 0; border-top: 1px solid var(--line); }
+.section-heading > p:not(.eyebrow) { margin: 14px 0 30px; color: var(--muted); word-break: keep-all; }
+.download-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.download-card { display: flex; min-height: 300px; flex-direction: column; padding: 32px; border: 1px solid var(--line); border-radius: 18px; background: rgba(6, 22, 35, 0.64); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12); }
+.download-card.featured { border-color: rgba(230, 191, 104, 0.64); background: linear-gradient(150deg, rgba(44, 91, 119, 0.8), rgba(8, 29, 45, 0.86)); }
+.pill { width: fit-content; margin: 0 0 22px; padding: 5px 9px; border-radius: 999px; color: #271d0a; background: var(--gold); font-size: 0.75rem; font-weight: 800; }
+.pill.subtle { color: var(--muted); background: rgba(183, 198, 209, 0.13); }
+.file-name { margin: 14px 0 8px; color: #dbe8ef; font: 0.82rem ui-monospace, Consolas, monospace; overflow-wrap: anywhere; }
+.card-copy { flex: 1; margin: 6px 0 26px; color: var(--muted); line-height: 1.7; word-break: keep-all; }
+.button { display: block; padding: 13px 16px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 800; transition: transform 120ms ease, background 120ms ease; }
+.button:hover { transform: translateY(-2px); }
+.primary { color: #122230; background: var(--gold); }
+.secondary { border: 1px solid rgba(221, 235, 242, 0.35); color: var(--ink); }
+.release-link { margin: 24px 0 0; text-align: center; }
+a { color: #bce8fa; }
+
+ol { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding: 0; list-style: none; }
+li { display: flex; gap: 15px; }
+ol span { display: grid; width: 31px; height: 31px; flex: 0 0 31px; place-items: center; border-radius: 50%; color: #1c2730; background: var(--gold); font-weight: 900; }
+ol strong { display: block; line-height: 1.5; word-break: keep-all; }
+ol p { margin: 9px 0 0; color: var(--muted); font-size: 0.94rem; line-height: 1.65; word-break: keep-all; }
+.notice { display: grid; grid-template-columns: minmax(220px, 0.75fr) minmax(0, 1.25fr); gap: 54px; align-items: start; }
+.notice ul { display: grid; gap: 14px; margin: 0; padding: 0; color: var(--muted); line-height: 1.7; list-style: none; }
+.notice li { position: relative; padding-left: 19px; }
+.notice li::before { position: absolute; left: 0; color: var(--gold); content: "•"; }
+code { color: #d7eefa; font-size: 0.85em; }
+footer { display: flex; justify-content: space-between; width: min(1060px, calc(100% - 40px)); margin: 0 auto; padding: 26px 0 34px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.88rem; }
+footer p { margin: 0; }
+
+@media (max-width: 720px) {
+  main { width: min(100% - 28px, 1060px); }
+  .hero { padding: 76px 0 60px; }
+  .download-grid, ol, .notice { grid-template-columns: 1fr; }
+  .notice { gap: 28px; }
+  .download-card { min-height: 0; padding: 27px; }
+  footer { width: min(100% - 28px, 1060px); flex-direction: column; gap: 12px; }
+}
