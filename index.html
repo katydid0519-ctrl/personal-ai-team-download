@@ -12,7 +12,7 @@
     <main>
       <section class="hero" aria-labelledby="page-title">
         <p class="eyebrow">PERSONAL AI TEAM · WINDOWS</p>
-        <h1 id="page-title">나만의 AI 팀을<br />데스크톱에서 운영하세요.</h1>
+        <h1 id="page-title"><span>나만의 AI 팀을</span><span>데스크톱에서 <em>운영하세요.</em></span></h1>
         <p class="lead">
           픽셀 사무실 속 직원에게 역할과 작업 규칙을 지정하고, Codex와 연결해 업무를 진행하는 Windows 앱입니다.
         </p>
@@ -56,6 +56,22 @@
         </ol>
       </section>
 
+      <section class="profiles" aria-labelledby="profiles-title">
+        <div class="section-heading">
+          <p class="eyebrow">TEAM PROFILES</p>
+          <h2 id="profiles-title">공개 직원 프로필</h2>
+          <p>현재 팀에서 사용하는 직원별 역할·모델·작동 규칙입니다. 필요한 프로필이나 규칙을 복사해 자신의 AI 팀 설정에 붙여 넣어 사용할 수 있습니다.</p>
+        </div>
+        <div class="profile-toolbar">
+          <label class="profile-search-label" for="profile-search">직원 찾기</label>
+          <input id="profile-search" type="search" placeholder="이름, 역할, 모델 또는 규칙 검색" autocomplete="off" />
+          <button id="copy-all-profiles" class="button secondary" type="button">전체 프로필 복사</button>
+        </div>
+        <p id="profile-result-count" class="profile-result-count" aria-live="polite"></p>
+        <div id="staff-profiles" class="profile-grid"></div>
+        <noscript><p class="profile-noscript">직원 프로필을 보려면 브라우저에서 JavaScript를 켜 주세요.</p></noscript>
+      </section>
+
       <section class="notice" aria-labelledby="notice-title">
         <div>
           <p class="eyebrow">BEFORE YOU INSTALL</p>
@@ -73,5 +89,7 @@
       <p>Personal AI Team · v0.8.4</p>
       <a href="https://github.com/katydid0519-ctrl/personal-ai-team-download">GitHub 다운로드 저장소</a>
     </footer>
+    <script src="staff-profiles.js" defer></script>
+    <script src="app.js" defer></script>
   </body>
 </html>
