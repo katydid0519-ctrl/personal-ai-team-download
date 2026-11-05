@@ -1,6 +1,6 @@
 # Personal AI Team 다운로드 페이지
 
-이 저장소는 **Netlify에 연결된 공개 정적 다운로드 페이지**와 공개 릴리스만 담습니다. 실제 앱 소스 저장소와 사용자 데이터는 포함하지 않습니다.
+이 저장소는 **Netlify에 연결된 공개 정적 다운로드 페이지**와 공개 릴리스만 담습니다. 실제 앱 소스와 비공개 사용자 데이터는 포함하지 않습니다. 공개가 승인된 직원 설정 예시는 별도로 제공합니다.
 
 ## Netlify 연결
 
@@ -10,19 +10,27 @@ Netlify 프로젝트 `personal-ai-team-download`는 이 GitHub 저장소의 `mai
 
 설치 파일은 Netlify가 아니라 GitHub Releases에서 제공됩니다. 대용량 앱 파일을 정적 사이트 배포에 포함하지 않고, 운영체제별 다운로드 버튼이 공개 릴리스 파일로 연결됩니다.
 
-## v0.8.7 배포 파일
+## v0.8.8 배포 파일
 
-- Windows x64 설치형: `Personal-AI-Team-Setup-0.8.7.exe`
-- Windows x64 포터블: `Personal-AI-Team-0.8.7.exe`
-- macOS Apple Silicon: `Personal-AI-Team-0.8.7-mac-arm64.dmg`, `Personal-AI-Team-0.8.7-mac-arm64.zip`
-- Linux x64: `Personal-AI-Team-0.8.7-linux-x86_64.AppImage`, `Personal-AI-Team-0.8.7-linux-amd64.deb`
-- 파일 무결성 확인: 릴리스의 `SHA256SUMS-0.8.7.txt`
-- 공개 Release 대상: <https://github.com/katydid0519-ctrl/personal-ai-team-download/releases/tag/v0.8.7>
+- Windows x64 설치형: `Personal-AI-Team-Setup-0.8.8.exe`
+- Windows x64 포터블: `Personal-AI-Team-0.8.8.exe`
+- macOS Apple Silicon: `Personal-AI-Team-0.8.8-mac-arm64.dmg`, `Personal-AI-Team-0.8.8-mac-arm64.zip`
+- Linux x64: `Personal-AI-Team-0.8.8-linux-x86_64.AppImage`, `Personal-AI-Team-0.8.8-linux-amd64.deb`
+- 파일 무결성 확인: 릴리스의 `SHA256SUMS-0.8.8.txt`
+- 공개 Release 대상: <https://github.com/katydid0519-ctrl/personal-ai-team-download/releases/tag/v0.8.8>
 
 사이트의 파일 링크는 위 공개 저장소의 Release 자산을 가리킵니다. **각 운영체제 파일과 검증값을 먼저 게시하고 링크를 확인한 뒤** 이 정적 페이지를 배포합니다. macOS 앱은 Apple 공증을 받지 않았으므로 첫 실행 시 추가 확인이 필요할 수 있습니다.
 
+## 공개 직원 설정 가져오기
+
+downloads/personal-ai-team-rules-0.8.8.zip은 공개하기로 한 15명 직원의 이름·역할·모델·규칙만 담은 팀 설정 ZIP입니다. 앱에서 **설정 → 팀 설정 옮기기 → 설정 가져오기**로 ZIP을 선택하고 미리보기 후 적용합니다. 적용 전에 기존 팀 설정을 백업하며, 직원과 외형은 가져온 팀 및 기본 외형으로 교체됩니다. 대화·작업 기록과 로그인 정보는 유지되고 스킬 라이브러리는 포함되지 않습니다.
+
+ZIP은 manifest.json과 roles.json만 포함하며, 앱의 실제 가져오기 미리보기와 격리된 적용 검사를 통과했습니다. SHA-256: 57491fad22991c038ac48cf9bfca0c2b0fbc94c92424ba5f27c5eecaabd80e90.
+
 ## 업데이트 안내
 
+- v0.8.8은 사무실 화면과 직원 명단을 정리하고, 책상 이름·상태를 한 줄로 표시합니다. Windows 작업 표시줄에 완료·승인·오류 알림을 표시합니다.
+- 새 프로필은 밝은 모드로 시작하며 사이드바는 화면별 자동·수동 설정을 지원합니다.
 - v0.8.5의 **설정 → AI 연결**에서 Codex 상태, 계정, 사용 가능한 모델을 확인하고 ChatGPT로 로그인할 수 있습니다. Codex 자동 탐색에 실패하면 실행 파일을 직접 선택합니다.
 - v0.8.6의 사무실 꾸미기에서 전체 색상 테마 3종, 가구 마감, 이동 가능한 구역 푯말을 제공합니다.
 - 가구 복사·붙여넣기 `Ctrl+C/V`, 실행취소 `Ctrl+Z`, 다시 실행 `Ctrl+Y` 또는 `Ctrl+Shift+Z`, 삭제 `Del`을 지원합니다. 구역 밖으로 밀린 가구는 한 번의 경고와 테두리로 표시합니다.

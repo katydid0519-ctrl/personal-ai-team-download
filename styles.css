@@ -67,6 +67,14 @@ li { display: flex; gap: 15px; }
 ol span { display: grid; width: 31px; height: 31px; flex: 0 0 31px; place-items: center; border-radius: 50%; color: #1c2730; background: var(--gold); font-weight: 900; }
 ol strong { display: block; line-height: 1.5; word-break: keep-all; }
 ol p { margin: 9px 0 0; color: var(--muted); font-size: 0.94rem; line-height: 1.65; word-break: keep-all; }
+.team-import { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: start; gap: 24px; margin: 0 0 30px; padding: 24px; border: 1px solid rgba(230, 191, 104, 0.5); border-radius: 14px; background: rgba(6, 22, 35, 0.5); }
+.team-import h3 { font-size: 1.28rem; }
+.team-import p { margin: 10px 0 0; color: var(--muted); line-height: 1.7; word-break: keep-all; }
+.team-import .team-import-steps { display: block; margin: 14px 0; padding-left: 1.4em; list-style: decimal; color: var(--ink); line-height: 1.8; }
+.team-import-steps li { display: list-item; padding-left: 2px; }
+.team-import .team-import-note { font-size: 0.88rem; }
+.team-import strong { color: var(--ink); }
+.team-import > .button { white-space: nowrap; }
 .profile-toolbar { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 10px; align-items: center; margin: 0 0 10px; }
 .profile-search-label { color: var(--muted); font-size: 0.88rem; font-weight: 700; }
 .profile-toolbar input { min-width: 0; padding: 11px 13px; border: 1px solid rgba(221, 235, 242, 0.3); border-radius: 8px; color: var(--ink); background: rgba(6, 22, 35, 0.64); font: inherit; }
@@ -107,6 +115,8 @@ footer p { margin: 0; }
   main { width: min(100% - 28px, 1060px); }
   .hero { padding: 76px 0 60px; }
   .download-grid, .highlight-grid, ol, .profile-grid, .notice { grid-template-columns: 1fr; }
+  .team-import { grid-template-columns: 1fr; gap: 16px; padding: 20px; }
+  .team-import > .button { white-space: normal; }
   .notice { gap: 28px; }
   .download-card { min-height: 0; padding: 27px; }
   .profile-toolbar { grid-template-columns: 1fr; }
