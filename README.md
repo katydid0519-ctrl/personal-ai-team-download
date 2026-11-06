@@ -10,14 +10,14 @@ Netlify 프로젝트 `personal-ai-team-download`는 이 GitHub 저장소의 `mai
 
 설치 파일은 Netlify가 아니라 GitHub Releases에서 제공됩니다. 대용량 앱 파일을 정적 사이트 배포에 포함하지 않고, 운영체제별 다운로드 버튼이 공개 릴리스 파일로 연결됩니다.
 
-## v0.8.8 배포 파일
+## v0.8.9 배포 대상 파일
 
-- Windows x64 설치형: `Personal-AI-Team-Setup-0.8.8.exe`
-- Windows x64 포터블: `Personal-AI-Team-0.8.8.exe`
-- macOS Apple Silicon: `Personal-AI-Team-0.8.8-mac-arm64.dmg`, `Personal-AI-Team-0.8.8-mac-arm64.zip`
-- Linux x64: `Personal-AI-Team-0.8.8-linux-x86_64.AppImage`, `Personal-AI-Team-0.8.8-linux-amd64.deb`
-- 파일 무결성 확인: 릴리스의 `SHA256SUMS-0.8.8.txt`
-- 공개 Release 대상: <https://github.com/katydid0519-ctrl/personal-ai-team-download/releases/tag/v0.8.8>
+- Windows x64 설치형: `Personal-AI-Team-Setup-0.8.9.exe`
+- Windows x64 포터블: `Personal-AI-Team-0.8.9.exe`
+- macOS Apple Silicon: `Personal-AI-Team-0.8.9-mac-arm64.dmg`, `Personal-AI-Team-0.8.9-mac-arm64.zip`
+- Linux x64: `Personal-AI-Team-0.8.9-linux-x86_64.AppImage`, `Personal-AI-Team-0.8.9-linux-amd64.deb`
+- 파일 무결성 확인: 릴리스의 `SHA256SUMS-0.8.9.txt`
+- 공개 Release 대상: <https://github.com/katydid0519-ctrl/personal-ai-team-download/releases/tag/v0.8.9>
 
 사이트의 파일 링크는 위 공개 저장소의 Release 자산을 가리킵니다. **각 운영체제 파일과 검증값을 먼저 게시하고 링크를 확인한 뒤** 이 정적 페이지를 배포합니다. macOS 앱은 Apple 공증을 받지 않았으므로 첫 실행 시 추가 확인이 필요할 수 있습니다.
 
@@ -29,6 +29,9 @@ ZIP은 manifest.json과 roles.json만 포함하며, 앱의 실제 가져오기 �
 
 ## 업데이트 안내
 
+- v0.8.9는 캐릭터의 머리와 옷, 사무실 가구와 공간의 색감과 세부 표현을 개선합니다.
+- 첫 실행 안내에서 AI 연결 상태를 확인하고 예시 업무를 입력할 수 있습니다. 사용자 지정 팀에 샘플을 적용하기 전에는 변경을 확인합니다.
+- 완료·부분 완료·오류를 작업별로 확인합니다. 결과가 도착해도 읽던 대화를 유지하고 결과 탭에 새 결과를 표시합니다.
 - v0.8.8은 사무실 화면과 직원 명단을 정리하고, 책상 이름·상태를 한 줄로 표시합니다. Windows 작업 표시줄에 완료·승인·오류 알림을 표시합니다.
 - 새 프로필은 밝은 모드로 시작하며 사이드바는 화면별 자동·수동 설정을 지원합니다.
 - v0.8.5의 **설정 → AI 연결**에서 Codex 상태, 계정, 사용 가능한 모델을 확인하고 ChatGPT로 로그인할 수 있습니다. Codex 자동 탐색에 실패하면 실행 파일을 직접 선택합니다.
@@ -38,8 +41,9 @@ ZIP은 manifest.json과 roles.json만 포함하며, 앱의 실제 가져오기 �
 - 가구 배치 미리보기와 통행 가능 여부, 오류 위치로 이동, 책상 재배정, 미저장 변경 안내를 추가했습니다.
 - 헤어·눈·표정 확대 및 다방향 비교, 옆모습 입 모양과 이동 장면, 축소 시 이름 가독성을 개선했습니다.
 - 기존 직원 설정, 외형, 대화와 작업 자료는 각 PC의 데이터 폴더에 이어서 보관됩니다. 새 버전을 실행하기 전 기존 앱을 종료합니다.
+- 자동 업데이트는 제공하지 않습니다. 새 버전의 설치 파일을 직접 내려받아 설치하거나 실행해야 합니다.
 
-첫 안내에서 샘플 팀의 7개 담당 업무·작동 규칙을 적용하고, 팀장 지시 예시를 복사해 첫 요청을 연습할 수 있습니다. 이후에는 앱의 설정에서 샘플 팀을 다시 불러오거나 기본 팀으로 초기화할 수 있습니다.
+첫 안내에서 샘플 팀의 7개 담당 업무·작동 규칙을 적용하고 예시 업무를 입력창에 채워 첫 요청을 연습할 수 있습니다. 내용은 사용자가 확인한 뒤 직접 전송합니다. 이후에는 앱의 설정에서 시작 안내를 다시 보거나 샘플 팀을 다시 불러오고 기본 팀으로 초기화할 수 있습니다.
 
 ## 공개 직원 프로필
 
