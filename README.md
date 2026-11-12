@@ -10,14 +10,14 @@ Netlify 프로젝트 `personal-ai-team-download`는 이 GitHub 저장소의 `mai
 
 설치 파일은 Netlify가 아니라 GitHub Releases에서 제공됩니다. 대용량 앱 파일을 정적 사이트 배포에 포함하지 않고, 운영체제별 다운로드 버튼이 공개 릴리스 파일로 연결됩니다.
 
-## v0.8.10 배포 대상 파일
+## v0.8.11 배포 대상 파일
 
-- Windows x64 설치형: `Personal-AI-Team-Setup-0.8.10.exe`
-- Windows x64 포터블: `Personal-AI-Team-0.8.10.exe`
-- macOS Apple Silicon: `Personal-AI-Team-0.8.10-mac-arm64.dmg`, `Personal-AI-Team-0.8.10-mac-arm64.zip`
-- Linux x64: `Personal-AI-Team-0.8.10-linux-x86_64.AppImage`, `Personal-AI-Team-0.8.10-linux-amd64.deb`
-- 파일 무결성 확인: 릴리스의 `SHA256SUMS-0.8.10.txt`
-- 공개 Release 대상: <https://github.com/katydid0519-ctrl/personal-ai-team-download/releases/tag/v0.8.10>
+- Windows x64 설치형: `Personal-AI-Team-Setup-0.8.11.exe`
+- Windows x64 포터블: `Personal-AI-Team-0.8.11.exe`
+- macOS Apple Silicon: `Personal-AI-Team-0.8.11-mac-arm64.dmg`, `Personal-AI-Team-0.8.11-mac-arm64.zip`
+- Linux x64: `Personal-AI-Team-0.8.11-linux-x86_64.AppImage`, `Personal-AI-Team-0.8.11-linux-amd64.deb`
+- 파일 무결성 확인: 릴리스의 `SHA256SUMS-0.8.11.txt`
+- 공개 Release 대상: <https://github.com/katydid0519-ctrl/personal-ai-team-download/releases/tag/v0.8.11>
 
 사이트의 파일 링크는 위 공개 저장소의 Release 자산을 가리킵니다. **각 운영체제 파일과 검증값을 먼저 게시하고 링크를 확인한 뒤** 이 정적 페이지를 배포합니다. macOS 앱은 Apple 공증을 받지 않았으므로 첫 실행 시 추가 확인이 필요할 수 있습니다.
 
@@ -29,7 +29,7 @@ ZIP은 manifest.json과 roles.json만 포함하며, 앱의 실제 가져오기 �
 
 ## 업데이트 안내
 
-- v0.8.10은 새 픽셀 캐릭터와 가구, 구역 바닥과 조명 및 테라스 배치 개선을 제공합니다.
+- v0.8.11은 네이비·화이트 UI, 업무 현황, 엘리베이터 연출과 사무실 꾸미기 개선을 제공합니다.
 - 낮·해질녘·밤·새벽에 창밖과 조명이 바뀌며, 시간대를 직접 고르고 벽등·가로등을 배치할 수 있습니다.
 - 안내 NPC가 사용법과 일상 이야기를 전하고 직원별 사무실 말투에 따라 상황별 멘트가 달라집니다. 말풍선은 Codex 업무 지시에 영향을 주지 않습니다.
 - v0.8.9는 캐릭터의 머리와 옷, 사무실 가구와 공간의 색감과 세부 표현을 개선합니다.
