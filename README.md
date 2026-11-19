@@ -10,14 +10,14 @@ Netlify 프로젝트 `personal-ai-team-download`는 이 GitHub 저장소의 `mai
 
 설치 파일은 Netlify가 아니라 GitHub Releases에서 제공됩니다. 대용량 앱 파일을 정적 사이트 배포에 포함하지 않고, 운영체제별 다운로드 버튼이 공개 릴리스 파일로 연결됩니다.
 
-## v0.8.12 배포 대상 파일
+## v0.8.13 배포 대상 파일
 
-- Windows x64 설치형: `Personal-AI-Team-Setup-0.8.12.exe`
-- Windows x64 포터블: `Personal-AI-Team-0.8.12.exe`
-- macOS Apple Silicon: `Personal-AI-Team-0.8.12-mac-arm64.dmg`, `Personal-AI-Team-0.8.12-mac-arm64.zip`
-- Linux x64: `Personal-AI-Team-0.8.12-linux-x86_64.AppImage`, `Personal-AI-Team-0.8.12-linux-amd64.deb`
-- 파일 무결성 확인: 릴리스의 `SHA256SUMS-0.8.12.txt`
-- 공개 Release 대상: <https://github.com/katydid0519-ctrl/personal-ai-team-download/releases/tag/v0.8.12>
+- Windows x64 설치형: `Personal-AI-Team-Setup-0.8.13.exe`
+- Windows x64 포터블: `Personal-AI-Team-0.8.13.exe`
+- macOS Apple Silicon: `Personal-AI-Team-0.8.13-mac-arm64.dmg`, `Personal-AI-Team-0.8.13-mac-arm64.zip`
+- Linux x64: `Personal-AI-Team-0.8.13-linux-x86_64.AppImage`, `Personal-AI-Team-0.8.13-linux-amd64.deb`
+- 파일 무결성 확인: 릴리스의 `SHA256SUMS-0.8.13.txt`
+- 공개 Release 대상: <https://github.com/katydid0519-ctrl/personal-ai-team-download/releases/tag/v0.8.13>
 
 사이트의 파일 링크는 위 공개 저장소의 Release 자산을 가리킵니다. **각 운영체제 파일과 검증값을 먼저 게시하고 링크를 확인한 뒤** 이 정적 페이지를 배포합니다. macOS 앱은 Apple 공증을 받지 않았으므로 첫 실행 시 추가 확인이 필요할 수 있습니다.
 
@@ -29,6 +29,11 @@ ZIP은 manifest.json과 roles.json만 포함하며, 앱의 실제 가져오기 �
 
 ## 업데이트 안내
 
+- v0.8.13은 AI 현황에서 팀장 지시와 직원 답변을 팝업으로 보여 주며, 요약을 숨기거나 표시할 수 있습니다.
+- 팀 작업에 참여할 직원을 고르고 모델·속도·Codex 저장 섹션을 선택할 수 있습니다. 작업 보관함에서 직원별 답변을 확인하고 여러 기록을 선택해 삭제할 수 있습니다.
+- 네 가지 화면 테마를 상단에서 전환하며, 새 직원의 이름과 작동 규칙을 추천받는 예시 프롬프트를 제공합니다. 오피스 도우미가 새 기능을 안내합니다.
+- 직원 목록의 반응형 두 열과 섹션 목록의 가독성을 개선하고, 앱 창과 설정 버전 정보에 제작자와 변경 사항을 표시합니다.
+
 - v0.8.12는 신규 직원 대화 섹션 오류를 수정하고 대화별 초안, 실행 실패 복구 안내, 실제 적용 설정 확인을 제공합니다.
 - 오피스 상의 16종·헤어 21종과 상의색·기본 코디를 선택할 수 있습니다. 이미지 캐릭터는 업로드 → 자동 생성 → 네 방향 비교·적용 → 직원 저장 순서로 만들고, 외형을 이 PC의 보관함에 저장해 다른 직원에게 불러올 수 있습니다.
 - 캐릭터 보관함은 앱 데이터 전체 백업에 포함되지만 공개 직원 설정 ZIP이나 팀 설정 ZIP에는 포함되지 않습니다.
@@ -39,7 +44,7 @@ ZIP은 manifest.json과 roles.json만 포함하며, 앱의 실제 가져오기 �
 - 첫 실행 안내에서 AI 연결 상태를 확인하고 예시 업무를 입력할 수 있습니다. 사용자 지정 팀에 샘플을 적용하기 전에는 변경을 확인합니다.
 - 완료·부분 완료·오류를 작업별로 확인합니다. 결과가 도착해도 읽던 대화를 유지하고 결과 탭에 새 결과를 표시합니다.
 - v0.8.8은 사무실 화면과 직원 명단을 정리하고, 책상 이름·상태를 한 줄로 표시합니다. Windows 작업 표시줄에 완료·승인·오류 알림을 표시합니다.
-- 새 프로필은 밝은 모드로 시작하며 사이드바는 화면별 자동·수동 설정을 지원합니다.
+- 새 프로필은 터미널 블랙으로 시작하며 네 가지 화면 테마와 화면별 사이드바 자동·수동 설정을 지원합니다.
 - v0.8.5의 **설정 → AI 연결**에서 Codex 상태, 계정, 사용 가능한 모델을 확인하고 ChatGPT로 로그인할 수 있습니다. Codex 자동 탐색에 실패하면 실행 파일을 직접 선택합니다.
 - v0.8.6의 사무실 꾸미기에서 전체 색상 테마 3종, 가구 마감, 이동 가능한 구역 푯말을 제공합니다.
 - 가구 복사·붙여넣기 `Ctrl+C/V`, 실행취소 `Ctrl+Z`, 다시 실행 `Ctrl+Y` 또는 `Ctrl+Shift+Z`, 삭제 `Del`을 지원합니다. 구역 밖으로 밀린 가구는 한 번의 경고와 테두리로 표시합니다.
