@@ -10,14 +10,14 @@ Netlify 프로젝트 `personal-ai-team-download`는 이 GitHub 저장소의 `mai
 
 설치 파일은 Netlify가 아니라 GitHub Releases에서 제공됩니다. 대용량 앱 파일을 정적 사이트 배포에 포함하지 않고, 운영체제별 다운로드 버튼이 공개 릴리스 파일로 연결됩니다.
 
-## v0.8.14 배포 대상 파일
+## v0.8.15 배포 대상 파일
 
-- Windows x64 설치형: `Personal-AI-Team-Setup-0.8.14.exe`
-- Windows x64 포터블: `Personal-AI-Team-0.8.14.exe`
-- macOS Apple Silicon: `Personal-AI-Team-0.8.14-mac-arm64.dmg`, `Personal-AI-Team-0.8.14-mac-arm64.zip`
-- Linux x64: `Personal-AI-Team-0.8.14-linux-x86_64.AppImage`, `Personal-AI-Team-0.8.14-linux-amd64.deb`
-- 파일 무결성 확인: 릴리스의 `SHA256SUMS-0.8.14.txt`
-- 공개 Release 대상: <https://github.com/katydid0519-ctrl/personal-ai-team-download/releases/tag/v0.8.14>
+- Windows x64 설치형: `Personal-AI-Team-Setup-0.8.15.exe`
+- Windows x64 포터블: `Personal-AI-Team-0.8.15.exe`
+- macOS Apple Silicon: `Personal-AI-Team-0.8.15-mac-arm64.dmg`, `Personal-AI-Team-0.8.15-mac-arm64.zip`
+- Linux x64: `Personal-AI-Team-0.8.15-linux-x86_64.AppImage`, `Personal-AI-Team-0.8.15-linux-amd64.deb`
+- 파일 무결성 확인: 릴리스의 `SHA256SUMS-0.8.15.txt`
+- 공개 Release 대상: <https://github.com/katydid0519-ctrl/personal-ai-team-download/releases/tag/v0.8.15>
 
 사이트의 파일 링크는 위 공개 저장소의 Release 자산을 가리킵니다. **각 운영체제 파일과 검증값을 먼저 게시하고 링크를 확인한 뒤** 이 정적 페이지를 배포합니다. macOS 앱은 Apple 공증을 받지 않았으므로 첫 실행 시 추가 확인이 필요할 수 있습니다.
 
@@ -29,6 +29,10 @@ ZIP은 manifest.json과 roles.json만 포함하며, 앱의 실제 가져오기 �
 
 ## 업데이트 안내
 
+- v0.8.15는 AI 연결 확인과 전송 안내를 개선합니다. 로그인 전 초안과 선택값을 보관하고 세션 만료 시 재연결 후 다시 보낼 수 있습니다.
+- 사무실 자리 배치도에서 번호와 직원을 확인하고 자리를 바꿀 수 있습니다.
+- 이미지나 웹 검색어로 만든 캐릭터의 결과와 움직임을 확인하고, NPC의 외형·제자리 동작·말풍선을 설정할 수 있습니다. 생성에는 Codex 연결이 필요합니다.
+- 첫 실행 안내는 연결 상태에 맞게 표시하며 예시 요청을 미리 볼 수 있습니다.
 - v0.8.14의 **AI 현황 → ＋ 새 작업**은 완료 결과가 표시된 화면에서 팀 업무 지시 창을 엽니다. 새 지시를 보내면 같은 화면에 새 업무가 표시되고 이전 결과와 직원 답변은 작업 보관함에서 확인할 수 있습니다.
 - v0.8.13은 AI 현황에서 팀장 지시와 직원 답변을 팝업으로 보여 주며, 요약을 숨기거나 표시할 수 있습니다.
 - 팀 작업에 참여할 직원을 고르고 모델·속도·Codex 저장 섹션을 선택할 수 있습니다. 작업 보관함에서 직원별 답변을 확인하고 여러 기록을 선택해 삭제할 수 있습니다.
