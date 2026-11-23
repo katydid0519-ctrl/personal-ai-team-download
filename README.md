@@ -10,14 +10,14 @@ Netlify 프로젝트 `personal-ai-team-download`는 이 GitHub 저장소의 `mai
 
 설치 파일은 Netlify가 아니라 GitHub Releases에서 제공됩니다. 대용량 앱 파일을 정적 사이트 배포에 포함하지 않고, 운영체제별 다운로드 버튼이 공개 릴리스 파일로 연결됩니다.
 
-## v0.8.15 배포 대상 파일
+## v1.0.0 배포 대상 파일
 
-- Windows x64 설치형: `Personal-AI-Team-Setup-0.8.15.exe`
-- Windows x64 포터블: `Personal-AI-Team-0.8.15.exe`
-- macOS Apple Silicon: `Personal-AI-Team-0.8.15-mac-arm64.dmg`, `Personal-AI-Team-0.8.15-mac-arm64.zip`
-- Linux x64: `Personal-AI-Team-0.8.15-linux-x86_64.AppImage`, `Personal-AI-Team-0.8.15-linux-amd64.deb`
-- 파일 무결성 확인: 릴리스의 `SHA256SUMS-0.8.15.txt`
-- 공개 Release 대상: <https://github.com/katydid0519-ctrl/personal-ai-team-download/releases/tag/v0.8.15>
+- Windows x64 설치형: `Personal-AI-Team-Setup-1.0.0.exe`
+- Windows x64 포터블: `Personal-AI-Team-1.0.0.exe`
+- macOS Apple Silicon: `Personal-AI-Team-1.0.0-mac-arm64.dmg`, `Personal-AI-Team-1.0.0-mac-arm64.zip`
+- Linux x64: `Personal-AI-Team-1.0.0-linux-x86_64.AppImage`, `Personal-AI-Team-1.0.0-linux-amd64.deb`
+- 파일 무결성 확인: 릴리스의 `SHA256SUMS-1.0.0.txt`
+- 공개 Release 대상: <https://github.com/katydid0519-ctrl/personal-ai-team-download/releases/tag/v1.0.0>
 
 사이트의 파일 링크는 위 공개 저장소의 Release 자산을 가리킵니다. **각 운영체제 파일과 검증값을 먼저 게시하고 링크를 확인한 뒤** 이 정적 페이지를 배포합니다. macOS 앱은 Apple 공증을 받지 않았으므로 첫 실행 시 추가 확인이 필요할 수 있습니다.
 
@@ -29,7 +29,12 @@ ZIP은 manifest.json과 roles.json만 포함하며, 앱의 실제 가져오기 �
 
 ## 업데이트 안내
 
-- v0.8.15는 AI 연결 확인과 전송 안내를 개선합니다. 로그인 전 초안과 선택값을 보관하고 세션 만료 시 재연결 후 다시 보낼 수 있습니다.
+- v1.0.0은 AI 현황에서 진행 중·확인 필요·완료 업무를 구분하고, 업무 흐름 화면에서 실제 배정·진행·결과 전달을 보여 줍니다. 저장된 완료 업무의 흐름을 다시 볼 수 있습니다.
+- 이번 업무의 Codex 토큰 사용량을 작업 상세와 업무 흐름에서 확인합니다. 기록이 부족할 때는 일부 집계 또는 기록 없음을 표시합니다.
+- 승인 대기·파일 필요·연결 끊김·실행 실패의 이유와 다음 행동을 안내하고, 요청과 완료된 직원 결과를 보관한 채 사용자가 이어하기나 재시도를 선택할 수 있습니다.
+- 작업과 AI 현황의 업무 지시 창에서 모델·추론 수준·Codex 저장 섹션·작업 폴더를 한 줄에 선택합니다. 각 항목은 작은 팝업으로 열립니다.
+- 작업 보관함에서 답변과 생성 파일을 구분하고, 사무실 직원 상세에서 현재 맡은 업무를 열 수 있습니다. 첫 실행 예시도 편집 가능한 초안으로 열 수 있습니다.
+- v0.8.15부터 로그인 전 초안과 선택값을 보관하고 세션 만료 시 재연결 후 다시 보낼 수 있습니다.
 - 사무실 자리 배치도에서 번호와 직원을 확인하고 자리를 바꿀 수 있습니다.
 - 이미지나 웹 검색어로 만든 캐릭터의 결과와 움직임을 확인하고, NPC의 외형·제자리 동작·말풍선을 설정할 수 있습니다. 생성에는 Codex 연결이 필요합니다.
 - 첫 실행 안내는 연결 상태에 맞게 표시하며 예시 요청을 미리 볼 수 있습니다.
